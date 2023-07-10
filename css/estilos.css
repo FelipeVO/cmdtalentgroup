@@ -142,29 +142,14 @@ ul.show {
 
 .hero{
     /* background-image: linear-gradient(120deg, rgba(93, 152, 192, 0.678) 0%, rgba(123, 206, 226, 0.671) 100%), url(../assets/hero-mapa.jpg); */
+    background-image: url(../assets/consultora1.jpg);
     width: 100%;
-    height: 830px;
+    height: 100vh;
     background-position: center;
-    position: relative;
+    background-attachment: fixed;
+    position: static;
     overflow: hidden;
-}
-
-.hero-foto{
-    background-image: linear-gradient( hsl(24, 65%, 52%), hsl(27, 75%, 47%));
-    transform: rotate(80deg);
-    border-radius: 100px;
-    width: 300px;
-    height: 450px;
-    /* border-radius: 30% 70% 53% 47% / 30% 39% 61% 70% ; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-inline: 50px;
-}
-.hero-foto img{
-    height: 490px;
-    border-radius: 500px;
-    transform: rotate(-80deg);
+    box-shadow: inset 0 0 400px 0 #000;
 }
 
 .svg-hero-bottom{
@@ -250,17 +235,17 @@ ul.show {
 /* Seccion Informacion de Contacto*/
 
 #info{
-    height: auto;
+    /* background-image: linear-gradient(120deg, rgba(93, 152, 192, 0.678) 0%, rgba(123, 206, 226, 0.671) 100%), url(../assets/hero-mapa.jpg); */
+    background-image: url(../assets/consultora2.jpg) ;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
     width: 100%;
-    color: var(--color1);
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding-bottom: 70px;
-    color: black;
-    padding-inline: 3%;
+    height: 400px;
+    background-position: center;
+    /* -webkit-box-shadow: inset 0 0 10px 10px #000;     */
+    /* -moz-box-shadow: inset 0 0 10px 10px #000; */
+    box-shadow: inset 0 0 50px 0 #000;
+    overflow: hidden;
 }
 
 /* Seccion Opiniones */
