@@ -5,9 +5,9 @@
 :root {
     /* Colores */
     --titulo1: ;
-    --color1: hsl(36, 54%, 64%);
-    --color2: hsl(34, 91%, 48%);
-    --color3: hsl(59, 58%, 66%);
+    --color1: rgb(15, 64, 114);
+    --color2: hsl(229, 43%, 44%);
+    --color3: hsl(244, 7%, 56%);
 
     /* Fonts */
     --font-titulo: 'Raleway', sans-serif;
@@ -161,14 +161,15 @@ ul.show {
  
 /* Seccion Introduccion */
 #introduccion {
-    width: 100vw;
+    width: 100%;
     height: auto;
+    overflow: hidden;
     background-size: cover;
     background-image: url(../assets/calafate.jpeg);
 }
 
 #intro-hero{
-    background-color: rgba(168, 158, 147, 0.5);
+    background-color: rgba(45, 42, 88, 0.5);
     background-blend-mode: multiply;
     width: 100vw;
     height: 100vh;
@@ -188,229 +189,55 @@ ul.show {
 /* Seccion Informacion General */
 
 #general{
-    background: white;
+    background-color: var(--color2);
+    padding: 5%;
+}
+
+.general-info{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    padding-block: 2%;
+}
+
+.general-info p{
+    color: white;
+}
+
+/* Seccion Iconos */
+
+#iconos{
+    display: flex;
     align-items: center;
-    flex-direction: column;
-    padding-bottom: 200px;
-}
-
-.general-hero{
-    padding-top: 30px;
-    text-align: center;
-    height: 200px;
-    width: 80%;
-    font-size: var(--title-size2);
-    font-weight: bold;
-    color: black;
-}
-
-.bloque{
+    justify-content: space-between;
     width: 100%;
-    background-color: var(--color1);
-    height: 10px;
+    /* margin: 5%; */
+    /* gap: 5%; */
 }
 
-.caja-general{
-    margin-top: 80px;
-    background-color: lightskyblue;
-    width: 80%;
-    height: 600px;
-    /* box-shadow: 20px black; */
-}
-
-.info-general{
-    height: 100%;
-    width: 55%;
-    background-color: white;
-}
-
-.contenedor-cards-general{
-    margin-top: 80px;
-    width: 80%;
+.recuadros{
+    width: 20%;
     height: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
 }
 
-.cards-general{
-    height: 400px;
-    width: 33%;
-    background-color: lightskyblue;
+.recuadros img{
+    width: 50%;
 }
 
-/* Seccion Informacion de Contacto*/
-
+/* Seccion Informacion*/
 #info{
-    /* background-image: linear-gradient(120deg, rgba(93, 152, 192, 0.678) 0%, rgba(123, 206, 226, 0.671) 100%), url(../assets/hero-mapa.jpg); */
-    background-image: url(../assets/consultora2.jpg) ;
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    width: 100%;
-    height: 400px;
-    background-position: center;
-    /* -webkit-box-shadow: inset 0 0 10px 10px #000;     */
-    /* -moz-box-shadow: inset 0 0 10px 10px #000; */
-    box-shadow: inset 0 0 50px 0 #000;
-    overflow: hidden;
 }
 
-/* Seccion Opiniones */
-
-.opiniones{
-    padding-block: 20px;
-    height: auto;
-    width: 100%;
-    background-color: white;
+.info-hero{
+    margin: 5%;
 }
 
-.opiniones h1{
-    text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 30px;
-    width: auto;
-    display: none;
-}
-
-.opiniones-contenedor{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 90%;
-    margin-left: 5%;
-    margin-block: 20px;
-}
-
-.opniones-box{
-    width: 100%;
-    margin-inline: 20px;
-    padding-block: 40px;
-    border-image: linear-gradient(var(--color1), #c4a80c) 30;
-    border-width: 4px;
-    border-radius: 10px;
-    border-style: solid; 
-    text-align: center;
-    box-shadow: 10px 7px 7px rgba(0, 0, 0, 0.4);
-    transition: .3s ease;
-}
-
-.opniones-box:hover{
-    transform: translateY(-3%);
-}
-
-.grande{
-    padding-block: 60px;
-}
-
-.opniones-box h3{
-    color: var(--color1);
-}
-
-/* Seccion Contacto */
-
-.contacto{
-    width: 100%;
-    height: auto;
-    padding: 30px;
-    background-color: var(--color3);
-}
-
-.contacto-texto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.contacto h2{
-    font-size: 2.8em;
-    border-bottom: 1px solid;
-}
-
-.contacto h2::before{
-    content: "03. Contactanos";
-    color: var(--color2);
-    font-size: .3em;
-    display: block;
-    /* text-align: right; */
-}
-
-.contacto-texto h3{
-    margin-top: 10px;
-    font-size: 1.2em;
-    font-weight: 100;
-}
-
-.contacto-texto ul{
-    margin-top: 10px;
-}
-
-.contacto-texto li{
-    text-align: right;
-    color: var(--color1);
-}
-
-.contacto-box a{
-    /* color: var(--color1); */
-    color: black;
-    font-size: 1.2em; 
-  }
-
-.contacto-box{
-    display: flex;
-    align-items: top;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
-    gap: 20px
-}
-
-form{
-    width: 500px;
-    display: flex;
-    flex-flow: row wrap;
-    column-gap: 30px;
-}
-.field {
-    margin-bottom: 10px;
-  }
-
-.field label {
-    display: block;
-    font-size: 1em;
-    font-family: var(--font-body);
-    margin-bottom: 5px;
-    color: black;
-}
-
-.field input {
-    display: block;
-    width: 500px;
-    line-height: 1.5;
-    font-size: 14px;
-    border: 0;
+.info-boxes{
+    background-color: aquamarine;
     border-radius: 5px;
-    height: 30px;
-    text-align: top;
-    align-items: start;
-    padding-left: 5px;
-}
-
-.field textarea{
-    max-width: 500px;
-    min-width: 500px;
-    padding-left: 5px;
-    border: 0;
-    border-radius: 5px;
-}
-
-#telefono, #email{
-    width: 235px;
 }
 
 /* Seccion Personal */
@@ -450,8 +277,9 @@ form{
     /* inline-size: ; */
     font-size: 20px;
 }
-/* Seccion Footer */
 
+
+/* Seccion Footer */
 footer{
     height: auto;
     background-color: black;
@@ -495,6 +323,8 @@ padding-left: 9px;
     color: white;
     text-decoration: underline;
 }
+
+
 /* Celular */
 
     /* Navbar */
