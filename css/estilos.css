@@ -186,7 +186,6 @@ ul.show {
     background-blend-mode: multiply;
     width: 100vw;
     height: 100vh;
-    /* text-align: end; */
     position: relative;
 }
 
@@ -225,11 +224,16 @@ ul.show {
 .general-info p{
     color: white;
     text-align: left;
+    font-size: 1.4em;
+    width: 80%;
 }
 
 .general-info h3{
     color: var(--color2);
     /* padding-left: 30px; */
+    font-size: 1.7em;
+    width: 20%;
+    text-align: center;
 }
 
 /* Seccion Iconos */
@@ -254,7 +258,12 @@ ul.show {
     text-align: center;
     color: var(--color1);
     font-size: 0.7em;
-    font-weight: 50;
+    transition: all 1s ease;
+}
+
+.recuadros:hover{
+    width: 33%;
+    height: 51vh;
 }
 
 .recuadros img{
@@ -335,19 +344,41 @@ ul.show {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    gap: 5%;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .foto-carlos{
-    background: black;
     width: 30%;
-    height: 400px;
+    height: 500px;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(../assets/carlos.jpg);
+}
+
+.foto-carlos-cover{
+    background-color: rgba(34, 31, 78, 0.3);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.foto-carlos-cover h3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 1.6em;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
 }
 
 .personal-info{
-    max-width: 60vw;
+    max-width: 65%;
     height: 400px;
     text-align: left;
 }
@@ -367,47 +398,48 @@ ul.show {
 /* Seccion Footer */
 footer{
     height: auto;
-    background-color: black;
-    color: grey;
+    background-color: var(--color4);
+    color: var(--color3);
     padding-top: 25px;
     padding-bottom: 15px;
 }
 
 footer a{
-    color: grey;
+    color: var(--color2);
 }
 
 .contenedor-footer{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center; 
+    align-items: flex-start; 
     width: 90%;
     gap: 10%;
-    margin-left: 5px;
+    margin-left: 5%;
 }
 
 .contenedor-footer div{
     padding: 10px;
 }
 
-.contenedor-footer p{
- padding-bottom: 5px;
- font-size: 1.1em;
+.contenedor-footer h2{
+    font-weight: bold;
 }
 
 .contenedor-footer a{
-border-left: 1px solid;
-padding-left: 9px;
+    font-size: 1.3em;
+    padding-left: 9px;
+    margin-right: 20px;
 }
 
-.link2{
+/* .link2{
     text-align: center;
     margin-top: 10px;
 }
 .link2 a{
     color: white;
     text-decoration: underline;
-}
+} */
 
 
 /* Celular */
