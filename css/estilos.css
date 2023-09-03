@@ -163,7 +163,7 @@ ul.show {
     position: static;
     overflow: hidden;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
  
 /* Seccion Introduccion */
@@ -181,7 +181,7 @@ ul.show {
     background-color: rgba(29, 46, 100, 0.5);
     background-blend-mode: multiply;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
@@ -459,6 +459,15 @@ footer a{
 
 
 /* Celular */
+@media (max-width: 800px) {
+    html, body {
+    overflow-x: hidden;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+  }
 
 /* Navbar */
 @media screen and (max-width: 952px) {
@@ -522,24 +531,29 @@ line-height: 30px;
 
 /* Hero */
 .hero{
+    margin-top: 5vh;
     width: 100%;
-    height: auto;
+    height: 30vh;
+    background-size: cover;
 }
 
 /* Introducion */
+#introduccion{
+    background-position: top left;
+    height: 40vh;
+}
+
 #intro-hero h1{
     position: absolute;
     text-align: right;
     bottom: 0;
     right: 0;
     margin-bottom: 5%;
-    margin-right: 0;
+    margin-right: 5px;
 }
 
 /* Seccion Informacion General */
-#intro-hero{
-    height: 70vh;
-}
+
 .general-info{
     flex-direction: column-reverse;
     text-align: unset;
@@ -557,7 +571,8 @@ line-height: 30px;
 }
 
 .recuadros{
-    width: 80%;
+    width: 90%;
+    height: 40vh;
     margin-block: 5%;
 }
 
@@ -565,6 +580,8 @@ line-height: 30px;
     width: 82%;
     height: 51vh;
 }
+
+/* Seccion Valores */
 
 /* Seccion Informacion */
 .info-hero p{
@@ -574,33 +591,38 @@ line-height: 30px;
 
 .boxes{
     grid-template-columns: repeat(4,25%);
-    grid-template-rows: repeat(6,16.6%);
-    
+    grid-template-rows: repeat(4,25%);
+    height: 90vh;
 }
 
 .boxes div{
-    padding: 2%;
+    padding: 10px;
 }
+
+.boxes div h3{
+    font-size: 1em;
+}
+
 .boxes div p{
-    padding-block: 5%;
+    padding-block: 15px;
     font-weight: 100;
-    font-size: 20px;
+    font-size: .7em;
     font-weight: lighter;
 }
 
 .box-1{
-    grid-column: 1 / 4;
-    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
     background: #5a7190;
 }
 .box-2{
-    grid-column: span 1;
-    grid-row: span 2;
+    grid-column: span 2;
+    grid-row: span 1;
     background: #1d3d67;
 }
 .box-5{
     grid-column: 1 / 5;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     background: #0d305c;
     padding-block: 0;
 }
@@ -616,7 +638,7 @@ line-height: 30px;
 }
 .box-6{
     grid-column: span 4;
-    grid-row: span 2;
+    grid-row: span 1;
     background: #abb7c6;
 }
 
@@ -638,13 +660,15 @@ line-height: 30px;
 
 /* Footer */
 .footer-links{
+    width: 100%;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(2,50%);
     grid-template-rows: repeat(2,50%);
 }
 
 .contenedor-footer a{
-    font-size: 1.3em;
+    font-size: .8em;
     padding-left: 0;
     margin-right: 0;
 }
@@ -654,13 +678,14 @@ line-height: 30px;
     grid-row: span 1;
 }
 
-.fa-linkedin{
+#linkedin{
     grid-column: span 1;
     grid-row: span 1;
 }
 
-.fa-envelope{
-    grid-column: span 2;
+#mail{
+    grid-column: 1 / 3;
     grid-row: span 1;
+    /* display: inline; */
 }
 }
