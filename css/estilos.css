@@ -102,6 +102,7 @@ a {
 
 .nav_logo img{
     width: 70px;
+    
 }
 
 .nav_logo p{
@@ -559,6 +560,10 @@ line-height: 30px;
 
 /* Seccion Informacion General */
 
+#general{
+    /* padding: 0; */
+}
+
 .general-info{
     flex-direction: column-reverse;
     text-align: unset;
@@ -567,7 +572,7 @@ line-height: 30px;
 .general-info p{
     padding-block: 5%;
     font-size: 20px;
-    width: 90%;
+    width: 100%;
 }
 
 /*Iconos*/
@@ -591,14 +596,14 @@ line-height: 30px;
 
 /* Seccion Informacion */
 .info-hero p{
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 
 .boxes{
     grid-template-columns: repeat(4,25%);
     grid-template-rows: repeat(6,calc(100%/6));
-    height: 100vh;
+    height: 95vh;
 }
 
 .boxes div{
@@ -612,7 +617,7 @@ line-height: 30px;
 .boxes div p{
     padding-block: 15px;
     font-weight: 100;
-    font-size: .7em;
+    font-size: .8em;
     font-weight: lighter;
 }
 
@@ -670,6 +675,10 @@ line-height: 30px;
 }
 
 /* Footer */
+.contenedor-footer{
+   gap: 0;
+}
+
 .footer-links{
     width: 100%;
     padding: 0;
@@ -678,8 +687,13 @@ line-height: 30px;
     grid-template-rows: repeat(2,50%);
 }
 
+.contenedor-footer div{
+    padding: 0;
+    padding-top: 10px;
+}
+
 .contenedor-footer a{
-    font-size: 1em;
+    font-size: .9em;
     padding-left: 0;
     margin-right: 0;
 }

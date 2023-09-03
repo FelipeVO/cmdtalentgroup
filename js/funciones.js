@@ -41,7 +41,15 @@ if (jvs2) {
 }
 })
 
-
+addEventListener('DOMContentLoaded', () => {
+const jvs3 = document.querySelector('.jvs3')
+if (jvs3) {
+    jvs3.addEventListener('click', () => {
+        const nav_menu = document.querySelector('.nav_menu')
+        nav_menu.classList.toggle('show')
+    })
+}
+})
 
 const navigationHeight = document.querySelector(".navbar")
 .offsetHeight;
